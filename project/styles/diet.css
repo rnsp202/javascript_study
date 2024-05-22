@@ -1,1 +1,66 @@
 /* 디자인은 심미적으로 자유롭게 */
+main {
+    width: 460px; height: 340px;
+    margin: 50px auto;
+    display: block;
+    background-image: url(../image/bg.png);
+    text-align: center;
+    letter-spacing: -0.2px;
+}
+main h1 {
+    padding-top: 44.5px;
+    font-size: 24px; font-weight: 700;
+    color: #E01C3F;
+}
+main p {
+    font-size: 14px; font-weight: 700;
+    color: #fff;
+    margin:6px 0 30px ;
+}
+main ul {
+    display: inline-block;
+    margin: 0 auto;
+}
+main ul li {
+    display: flex;
+    flex-wrap: row nowrap;
+    justify-content: space-between;
+    width: 357px; height: 30px;
+    font-size: 16px; font-weight: 700;
+    color: #661212;
+    align-items: center;
+    margin-bottom: 8px;
+}
+main ul li input {
+    display: inline-block; 
+    /* width: 100%; */
+    height: 30px;
+    border: 0; border-radius: 5px;
+    background-color: #fff4d9;
+    color: #e15e00;
+    text-align: center;
+    font-size: 12px;
+}
+main ul li:last-child {
+    margin-bottom: 30px;
+}
+main ul li #height {
+    width: 261px;}
+main ul li #weight {
+    width: 233px;}
+main ul li #goals {
+    width: 279px;}
+main #btn {
+}
+main #btn #result {
+    width: 357px; height: 30px;
+    background-color: #ff5065;
+    border: 1px solid #e9335f;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+}
+main #btn #result:hover {
+    background-color: #ff4747;
+}
