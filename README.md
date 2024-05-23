@@ -142,3 +142,20 @@
 * `document.querySelectorAll('태그명')`
 * `document.querySelectorAll('.클래스명')`
 * `getElements...`와 `querySelectorAll`함수는 `index`를 사용해서 대상을 선택하므로 사용 시 주의가 필요하다.
+------------------
+## 가족관계선택속성
+* ex) `<header><nav><a></a><a></a></nav></header>`
+* `parentNode`, `parentElement`
+* 현 객체 태그의 부모 태그를 선택할 때 이용할 수 있다
+* -`nav.parentElement = header`
+* `childNodes`, `children`
+* 현 객체 태그의 자식 태그들을 선택할 때 이용할 수 있다.
+* -`nav.childNodes[1] = a(두번째거)`
+* `firstChild`, `firstElementChild`
+* 자식 태그 선택용 - 맨 앞에 있는 애 선택용
+* `lastChild`, `lastElementChild`
+* 자식 태그 선택용 - 맨 뒤에 있는 애 선택용
+* `nextSibling`, `nextElementSibling`
+* 형체 태그 - 자기 다음 형제 속성 선택
+* `previousSibling`, `previousElementSibling`
+* 형체 태그 - 자기 이전 형제 속성 선택
