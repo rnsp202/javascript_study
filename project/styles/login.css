@@ -1,0 +1,64 @@
+/* js 호출용 design class */
+.no_input {
+    color: green;
+    font-weight: 700;
+}
+.error_input {
+    color: crimson;
+    font-weight: 900;
+}
+/* ----------------------------------- */
+main {
+    width: 430px; height: 300px;
+    padding: 30px 16px;
+    text-align: left;
+    margin: 0 auto 0;
+    background-image: url(https://images.unsplash.com/photo-1597571063304-81f081944ee8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fHNreXxlbnwwfHwwfHx8MA%3D%3D);
+    border-radius: 5px;
+}
+main #login {
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+main #login ul {
+    margin-bottom: 10px;
+}
+main #login ul li {}
+main #login ul li input {
+    width: 100%; height: 40px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 0;
+}
+main #login ul li #user_id {
+    margin-bottom: 10px;}
+main #login ul li #user_pw {}
+main #login p {}
+main #login .error {
+    margin-top: 5px;
+    font-size: 0.625em;
+}
+main #login .btn {
+    margin-bottom: 5px;
+}
+main #login .btn #login_btn {
+    width: 100%; height: 40px;
+    border-radius: 5px;
+    font-weight: 500; color: rgb(0, 67, 129);
+    border: 1px solid rgb(158, 208, 245);
+    background-color: rgb(81, 180, 238);
+}
+main .search {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+main .search a {
+    color: rgb(0, 67, 129);
+    margin-right: 40px;
+    font-size: 0.8em;
+}
+main .search a:first-child {
+}
