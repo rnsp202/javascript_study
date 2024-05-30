@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./script/for1.js" defer></script>
+    <script src="./script/for2.js" defer></script>
+    <script src="./script/for3.js" defer></script>
+    <style>
+        li {border-bottom: 1px dashed #aaa;}
+        table, tr, td {border: 1px solid #000;}
+        .design1 {
+            background-color: antiquewhite;
+            color: blueviolet;
+        }
+        .design2 {
+            background-color: rgb(207, 199, 255);
+            color: rgb(226, 43, 98);
+        }
+        .q {
+            border-bottom: 1px dashed #aaa;
+            padding: 15px 15px 0; font-size: 1em;
+            margin-bottom: 0; 
+        }
+        .a {
+            background-color: #eee;
+            padding: 0 15px;
+            /* overflow-y: hidden;
+            height: 0; transition: height 0.3s, padding 0.3s; */
+            margin: 0;
+            /* display: none; */
+        }
+        /* .a.on {
+            height: 40px;
+            padding: 0px 15px;
+        } */
+        .active {
+            background-color: blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+    <main></main>
+    <table></table>
+    <nav>
+        <a href="#">menu1</a>
+        <a href="#">menu2</a>
+        <a href="#">menu3</a>
+        <a href="#">menu4</a>
+    </nav>
+    <section></section>
+    <table id="t">
+        <!-- <tr>
+            <td>t</td>
+            <td>t</td>
+            <td>t</td>
+        </tr>
+        <tr>
+            <td>t</td>
+            <td>t</td>
+            <td>t</td>
+        </tr> -->
+    </table>
+    <div class="qna">
+        <h1 class="q">Q. for문이 뭔가요</h1>
+        <p class="a">A. 조건식에 맞으면 설정 개수만큼 속성을 반복</p>
+        <h1 class="q">Q. if문이 뭔가요</h1>
+        <p class="a">A. 조건을 설정하고 조건이 true거나 false에 따라 각각 설정한 속성을 실행시키는 것</p>
+        <h1 class="q">Q. querySelector와 getElement의 차이점이 뭔가요?</h1>
+        <p class="a">A. querySelector는 원하는 객체만 골라서 객체설정가능, getElement는  </p>
+    </div>
+</body>
+</html>
