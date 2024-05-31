@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body {
+            scroll-behavior: smooth;
+        }
+        body {
+            position: relative;
+            height: 300vh;
+        }
+        main {
+            position: fixed;
+            display: flex;
+            flex-flow: column nowrap;
+            right: 40px; bottom: 400px;
+        flex-flow: right;}
+        main .btn {
+            background-color: black;
+            color: #fff;
+            position: absolute;
+            border: 1px solid rgb(155, 155, 155);
+            width: 20px; height: 20px;
+            border-radius: 10px;
+            transition: all 0.4s;
+            overflow: hidden;
+        }
+        .btn:hover {width: 100px;}
+        .btn:nth-child(1) {top: 0;}
+        .btn:nth-child(2) {top: 35;}
+        .btn:nth-child(3) {top: 70;}
+        .btn:nth-child(4) {top: 105;}
+        .btn:nth-child(1)::after {content: 'landscpae 1';}
+        .btn:nth-child(2)::after {content: 'landscpae 2';}
+        .btn:nth-child(3)::after {content: 'landscpae 3';}
+        .btn:nth-child(4)::after {content: 'landscpae 4';}
+        .bg {
+            width: 100%;
+            height: 80vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .bg1 {
+            background-image: url(https://images.unsplash.com/photo-1552083375-1447ce886485?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        }
+        .bg2 {background-image: url(https://images.unsplash.com/photo-1603426139581-117cb735cf61?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);}
+        .bg3 {background-image: url(https://images.unsplash.com/photo-1617050399467-f4c834ac69b1?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);}
+        .bg4 {background-image: url(https://images.unsplash.com/photo-1625729410412-2294315b517b?q=80&w=1194&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);}
+    </style>
+    <script src="./script/bg_scroll.js" defer></script>
+</head>
+<body>
+    <main>
+        <button type="button" class="btn"></button>
+        <button type="button" class="btn"></button>
+        <button type="button" class="btn"></button>
+        <button type="button" class="btn"></button>
+    </main>
+    <div class="bg bg1"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <div class="bg bg4"></div>
+</body>
+</html>
