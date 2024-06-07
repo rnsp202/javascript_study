@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <!-- <link rel="stylesheet" href="./styles/reset.css"> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <!-- <script>
+        //gsap.to('적용대상',{scrollTrigger:'뷰포트인식대상'})
+        gsap.to('.s2 img',{
+            scrollTrigger:'.s2',
+            duration:1,
+            x:300, y:200,
+        })
+    </script> -->
+    <style>
+        main {}
+        main section {
+            line-height: 100vh; text-align: center;
+            font-size: 5rem; background-color: aliceblue;
+        }
+        main .s2 {background-color: beige;}
+        main .s2 img {
+            /* opacity: 0;  */
+            width: 800px;
+        }
+        main .s3 img {
+            /* opacity: 0;  */
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="s1">1</section>
+        <section class="s2">
+            <img src="https://images.unsplash.com/photo-1717328499550-e6addc3def8b?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNXx8fGVufDB8fHx8fA%3D%3D" alt="">
+        </section>
+        <section class="s3">3</section>
+        <section class="s3"><img src="https://images.unsplash.com/photo-1717501805972-6f44905bc53c?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyOHx8fGVufDB8fHx8fA%3D%3D" alt=""></section>
+    </main>
+    <script>
+        //gsap.to('적용대상',{scrollTrigger:'뷰포트인식대상'})
+        gsap.to('.s2 img',{
+            scrollTrigger:'.s2',
+            duration:1,
+            delay:0.5,
+            x:300, y:200,
+            borderRadius:50,
+            scale:0.8,
+        })
+        gsap.to('.s3 img',{
+            scrollTrigger:'.s3',
+            duration:2,
+            x:-100, y:300,
+            borderRadius: 50,
+        })
+        //
+    </script>
+</body>
+</html>

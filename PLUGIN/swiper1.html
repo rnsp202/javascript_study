@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <!--플러그인 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--플러그인 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <style>
+        .swiper {width: 500px; height: 500px; background-color: cadetblue;}
+        .main-slide {background: #611bb1;}
+        .main-slide .swiper-wrapper {}
+        /* swiper-wrapper 개별 슬라이드(.swiper-slide) 묶음 부모*/
+        .main-slide .swiper-wrapper .swiper-slide {
+            background-size: cover;
+            background-position: center;
+            color: aliceblue; font-size: 5rem;
+        }
+        .main-slide .swiper-wrapper .slide1 {background-image: url(https://images.unsplash.com/photo-1692607431225-5f4564c8f132?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);}
+        .main-slide .swiper-wrapper .slide2 {background-image: url(https://images.unsplash.com/photo-1583339522870-0d9f28cef33f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);}
+        .main-slide .swiper-wrapper .slide3 {background-image: url(https://images.unsplash.com/photo-1717062010884-2b4aba0aefce?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);}
+        /* swiper-slide 사용자가 보는 슬라이드 1개 영역 (자식 자손 태그 제한없음)*/
+        .sub-slide {background: #eed4ff;}
+    </style>
+</head>
+<body>
+    <!-- 스와이퍼 슬라이드 플러그인 주의사항-->
+    <!-- 스와이퍼 슬라이드를 사용하려면 swiper가 제공하는 html, css, js 규칙을 반드시 지켜야한다.
+    특히 html의 가족관계 및 지정된 클래스명을 지켜야 적용되기 때문에 대소문자, 공백, 스펠링 등 모두 주의해서 사용해야한다. 대신 swiper가 제공하는 기본 명칭 외에 추가 클래스명은 자유롭게 지정가능하다.-->
+    <div class="swiper main-slide">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide1">1</div>
+            <div class="swiper-slide slide2">2</div>
+            <div class="swiper-slide slide3">3</div>
+        </div>
+        <!--필요 시 사용(선택)-->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-scrollbar"></div>
+    </div>
+    <script>
+        // const 변수 = new Swiper('적용대상')
+        // const 변수 = new Swiper('적용대상', {옵션:값, 옵션:값,})
+        const swiper1 = new Swiper('.main-slide', {
+            //슬라이드 진행 방향
+            // direction:'horizontal,' //가로로
+            // direction:'vertical', //세로로
+            // effect:'fade', //움직이지않고 제자리 변환
+            // effect:'cube', //주사위 옆으로 굴리듯 변환
+            // //cube 옵션
+            // cubeEffect:{
+            //     shadow:true,
+            //     shadowOffset:30, //기본값20
+            //     shadowScale:1.2, //기본값1
+            // },
+            effect:'cards',
+            cardEffect:{
+                perSlideOffset:8, perSlideRotate:2, rotate:true, slideShadows:true
+            },
+            //자동재생(기본설정3초(3000))
+            autoplay:{delay:3000},
+            //마지막슬라이드에서 시작 슬라이드로 자연스럽게 변환
+            loop:true, //기본값은 false
+        })
+    </script>
+</body>
+</html>
